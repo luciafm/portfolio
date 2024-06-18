@@ -7,6 +7,7 @@
 
     --fonte-primaria: "Krona One", sans-serif ;
     --fonte-secundaria: "Montserrat", sans-serif;
+    height: 100%;
 }
 
 * {
@@ -17,7 +18,10 @@
 body {
     box-sizing: border-box; /*pra elementos filhos não sairem do elemento pai*/
     background-color: var(--cor-primaria);
-    color: var(--cor-secundaria)
+    color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .cabecalho{
@@ -109,14 +113,14 @@ body {
     background-color: var(--cor-terciaria);
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
-    font-weight: 400;
+    font-weight: 100%;
     font-size: 1.5rem;
-    padding: 23.64px;
+    padding: 10px;
     text-align: center;
 }
 
 .apresentacao__p{
-    padding: 5% 15%;
+    padding: 5% 15%;;
 }
 
 .apresentacao__projeto__titulo{
@@ -126,7 +130,7 @@ body {
 
 .apresentacao__section{
     display: flex;
-    padding: 50px;
+    padding: 80px 50px 80px 50px;
     align-items: center;
     justify-content: center;
     flex-direction:row;
